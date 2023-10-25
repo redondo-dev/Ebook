@@ -1,0 +1,162 @@
+ 
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+}
+.one{
+display: grid;
+grid-template-columns:repeat(2,1fr) ;
+justify-items: center; 
+
+} 
+
+h2{
+  margin-top: 20%;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+h3{
+  font-size: 26px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+form{
+  margin-top: 20px;
+  margin-left:15%;
+}
+span{
+  color :red;
+}
+input{
+  border-radius: 9999px;
+  width:28em ;
+  height:2em ;
+}
+button{
+  cursor :pointer;
+  color :teal;
+  border-radius:  9999px ;
+  margin-left: 10px;
+  margin-top:10px ;
+  border: 2px solid red;
+  background-color: transparent; 
+  transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: teal; 
+  color: white; 
+  border-color: teal; 
+}
+
+.book{
+  margin-top:20px;
+  margin-left:50px;
+  border:2px solid rgb(215, 77, 77);
+  border-radius: 25% 25% 10% 10%;
+  max-width: 100%;
+  max-height:100%;
+
+}
+.titre {
+  text-align: center;
+  font-weight: 300;
+  font-size: 35;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+  /* For screens with a minimum width of 768px */
+.cardsearch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display three cards per row */
+  text-align: center;
+}
+
+.card {
+  /* Your existing styles for individual cards */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  background-color: teal;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  max-width: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+  .one{
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    justify-items: center; 
+    
+    }
+    .book{
+      margin-top:20px;
+      margin-right: 20px;
+      margin-left:20px;
+      border:2px solid rgb(224, 106, 106);
+      max-width:100%;
+      max-height:100%;
+    
+    }
+  .cardsearch {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  h2{
+    margin-top: 10%;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 2em;
+  }
+  input{
+    border-radius: 9999px;
+    width:20em ;
+    height:2em ;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .one{
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    justify-items: center; 
+    
+    }
+    form{
+      margin-top: 20px;
+      margin-left:10%;
+    }
+  .cardsearch {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  h2{
+    margin-top: 10%;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .book{
+    margin-top:20px;
+    margin-left:100px;
+    margin-right:100px ;
+    border:2px solid rgb(215, 77, 77);
+    border-radius: 25% 25% 10% 10%;
+    max-width: 100%;
+    max-height:100%;
+  
+  }
+}
